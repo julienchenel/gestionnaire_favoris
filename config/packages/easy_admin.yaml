@@ -1,0 +1,19 @@
+easy_admin:
+    site_name: Favories
+
+    entities:
+        Link:
+            label: Lien
+            class: App\Entity\Link
+            list:
+                title: 'Liste des liens'
+                fields:
+                    - id
+                    - { property: label, label: "Libellé", template: "admin/link/_label.html.twig" }
+                    - { property: read, label: "lu ?" }
+                    - { property: rating, label: "note", template: "admin/link/_rating.html.twig" }
+                    - url
+
+
+
+
